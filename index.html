@@ -1,11 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nexus Agency Landing Page</title>
+    <link rel="stylesheet" href="./css/output.css">
+
+     <!-- fontawesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Playfair for headeings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+
+    <!-- Roboto font for body -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="font-Roboto">
+
+    <header class=" bg-Dark-blue h-18 w-full sticky top-0 z-50 border border-b-Blue-shade/20 ">
+
+        <nav class=" flex h-full w-full max-w-9/10 mx-auto justify-between items-center relative ">
+
+            <div class="flex justify-center items-center gap-1.5 text-white">
+                <span class="w-8 h-8 bg-light-blue py-1 px-2 rounded-lg font-yellowtail font-bold">N</span>
+                <span class="font-medium">Nexus</span>
+            </div>
+
+            <!-- desktop navbar -->
+            <ul class="hidden lg:flex lg:gap-12">
+                <li><a href="#home" class="text-Blue-shade px-2 py-1 a-hover">Home</a></li>
+                <li><a href="#services" class="text-Blue-shade px-2 py-1 a-hover">Service</a></li>
+                <li><a href="#about" class="text-Blue-shade px-2 py-1 a-hover">About</a></li>
+                <li><a href="#contact" class="text-Blue-shade px-2 py-1 a-hover">Contact</a></li>
+                
+
+            </ul>
+
+
+            <!-- mobile navbar -->
+            <div class="lg:hidden flex flex-col h-full items-center justify-center group" >
+                <button>
+                    <i class="fa-solid fa-bars text-4xl text-white"></i>
+                </button>
+                <ul class="absolute top-full right-[-3] hidden flex-col gap-16 bg-Dark-blue justify-center items-center w-1/2 max-w-70 h-[calc(100vh-4.5rem)] group-hover:flex" >
+                    <li><a href="#home" class="text-Blue-shade px-2 py-1 a-hover md:text-3xl">Home</a></li>
+                    <li><a href="#services" class="text-Blue-shade px-2 py-1  a-hover md:text-3xl">Service</a></li>
+                    <li><a href="#about" class="text-Blue-shade px-2 py-1 a-hover md:text-3xl">About</a></li>
+                    <li><a href="#contact" class="text-Blue-shade px-2 py-1 a-hover md:text-3xl">Contact</a></li>
+                    <li><a href="" class="bg-light-blue py-2 px-4 text-white rounded-[10px] md:text-3xl hover:bg-light-blue/50">Get Started</a></li>
+                </ul>
+
+            </div>
+
+            <a href="" class="hidden bg-light-blue py-2 px-4 text-white rounded-[10px] lg:block hover:bg-light-blue/50">Get Started</a>
+
+        </nav>
+
+    </header>
     
 </body>
 </html>

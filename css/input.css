@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+
+@theme{
+    --font-Roboto: "Roboto", "sans-serif";
+    --font-Playfair: "Playfair", "serif";
+    --font-yellowtail: "Yellowtail", "cursive";
+
+
+    --color-Dark-blue: #0f1729 ;
+    --color-Blue-shade:  #f5f5f5b3;
+    --color-light-blue: #3b82f6;
+    --color-green: #22c55eb3;
+    --color-purple: #a855f780;
+    --color-dark-blue1:#0f172a;
+}
+
+
+    .a-hover{
+        @apply hover:bg-light-blue hover:text-white hover:rounded-lg
+    }
