@@ -376,6 +376,12 @@
       background-color: color-mix(in oklab, var(--color-light-blue) 50%, transparent);
     }
   }
+  .bg-light-blue\/60 {
+    background-color: color-mix(in srgb, #3b82f6 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-light-blue) 60%, transparent);
+    }
+  }
   .bg-purple {
     background-color: var(--color-purple);
   }
@@ -402,6 +408,9 @@
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
+  }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
   }
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
@@ -451,6 +460,12 @@
   .text-Blue-shade {
     color: var(--color-Blue-shade);
   }
+  .text-Blue-shade\/50 {
+    color: color-mix(in srgb, #f5f5f5b3 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-Blue-shade) 50%, transparent);
+    }
+  }
   .text-green {
     color: var(--color-green);
   }
@@ -478,6 +493,10 @@
   }
   .brightness-130 {
     --tw-brightness: brightness(130%);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .brightness-150 {
+    --tw-brightness: brightness(150%);
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .transition-all {
